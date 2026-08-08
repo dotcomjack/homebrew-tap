@@ -1,6 +1,6 @@
 # dotcomjack tap
 
-Homebrew formulae from [DotcomJack](https://dotcomjack.com).
+Homebrew formulae and casks from [DotcomJack](https://dotcomjack.com).
 
 ## claude-session-tint
 
@@ -11,3 +11,16 @@ brew install dotcomjack/tap/claude-session-tint
 ```
 
 Source: https://github.com/dotcomjack/claude-session-tint (MIT)
+
+## nocturne
+
+Stop your macOS menu bar clock from telling you it is 3am.
+
+```
+brew install --cask dotcomjack/tap/nocturne
+```
+
+Signed with a Developer ID, notarized and stapled, so it opens without a
+right click. macOS 14 or later.
+
+Source: https://github.com/dotcomjack/nocturne (MIT)
