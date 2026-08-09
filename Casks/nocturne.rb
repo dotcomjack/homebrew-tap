@@ -1,6 +1,6 @@
 cask "nocturne" do
-  version "1.1.1"
-  sha256 "a5a808fc68a2d6dba29c8457df89af6929564631178a2ca86114aad0ece11c7a"
+  version "1.2.0"
+  sha256 "3700bd9e3934b63ec2cee51b7b5726ec2a6bfeff9ecaa896a8c285967350b4f4"
 
   url "https://github.com/dotcomjack/nocturne/releases/download/v#{version}/Nocturne-#{version}.dmg"
   name "Nocturne"
