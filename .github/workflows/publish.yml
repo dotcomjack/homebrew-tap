@@ -12,6 +12,11 @@ on:
 jobs:
   pr-pull:
     runs-on: ubuntu-latest
+    # Manual dispatch only, so this is not a volume concern. It is here for the tail:
+    # brew pr-pull reaches out to the network, and GitHub's 360 minute default would let
+    # one wedged invocation quietly burn 6 hours of runner time. Added on top of
+    # Homebrew's stock template; re-apply if this file is ever re-synced from upstream.
+    timeout-minutes: 30
     permissions:
       actions: read
       checks: read
