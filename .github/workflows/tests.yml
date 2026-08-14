@@ -6,8 +6,23 @@ on:
       - main
   pull_request:
 
+# Added on top of Homebrew's stock tap template, which ships without either of the two
+# cost guards below. If this file is ever re-synced from upstream, re-apply them.
+#
+# Supersede in-flight runs on the same ref instead of paying for all of them. The matrix
+# starts two macOS legs per run and a macOS minute bills at 10x a Linux minute, which is
+# why this tap cost $1.85 across only 12 runs from Aug 1 to 14 2026, more per run than
+# any repo in the account except boardsnap. The last push in a burst is never cancelled.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-bot:
+    # GitHub's default is 360 minutes. Two macOS legs wedged for that long is $57.60,
+    # over 30x this tap's measured half-month spend. Tap syntax and formula tests run in
+    # about 1.5 minutes, so 30 is deep headroom and past it means a hang.
+    timeout-minutes: 30
     strategy:
       matrix:
         os: [ macos-15-intel, macos-26 ]
