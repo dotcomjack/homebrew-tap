@@ -1,10 +1,10 @@
 cask "nocturne" do
-  version "1.2.0"
-  sha256 "3700bd9e3934b63ec2cee51b7b5726ec2a6bfeff9ecaa896a8c285967350b4f4"
+  version "1.3.0"
+  sha256 "e1503466bac86066fde4002cbcd794d56c3cd21793799e2bc1ca017df45bb46b"
 
   url "https://github.com/dotcomjack/nocturne/releases/download/v#{version}/Nocturne-#{version}.dmg"
   name "Nocturne"
-  desc "Hides the menu bar clock, and gives it back in one click"
+  desc "Puts the menu bar clock away when you go on Do Not Disturb"
   homepage "https://github.com/dotcomjack/nocturne"
 
   livecheck do
