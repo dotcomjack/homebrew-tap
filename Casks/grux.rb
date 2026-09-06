@@ -4,8 +4,8 @@ cask "grux" do
 
   url "https://github.com/dotcomjack/grux/releases/download/v#{version}/Grux-#{version}-macOS-arm64.zip"
   name "Grux"
-  desc "Local-first Mac agent: terminals it can undo, agent swarms, mail, meetings"
-  homepage "https://gruxai.com"
+  desc "Local-first agent that opens terminals it can undo and runs agent swarms"
+  homepage "https://gruxai.com/"
 
   livecheck do
     url :url
@@ -16,10 +16,9 @@ cask "grux" do
   # The release ships one arm64 slice, so an Intel Mac would download 23 MB
   # and then fail to launch with a message about the wrong architecture.
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Grux.app"
-
   # The command line is not a second download. It is a binary inside the app
   # bundle, which is deliberate: it speaks a versioned socket protocol to the
   # app, and two copies of that client is how you get a mismatch that reports
