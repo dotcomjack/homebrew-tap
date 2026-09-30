@@ -4,7 +4,7 @@ cask "grux" do
 
   url "https://github.com/dotcomjack/grux/releases/download/v#{version}/Grux-#{version}-macOS-arm64.zip"
   name "Grux"
-  desc "Local-first agent that opens terminals it can undo and runs agent swarms"
+  desc "Local-first Mac agent with one command panel, a local model and no account"
   homepage "https://gruxai.com/"
 
   livecheck do
