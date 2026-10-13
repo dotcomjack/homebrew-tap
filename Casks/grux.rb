@@ -3,8 +3,8 @@ cask "grux" do
   sha256 "86782fb1f206d3845fc76ee4e6793f3739cc385f3ebb1fa3f4cf8f10a2df8bdc"
 
   url "https://github.com/dotcomjack/grux/releases/download/v#{version}/Grux-#{version}-macOS-arm64.zip"
-  name "Grux"
-  desc "Local-first Mac agent with one command panel, a local model and no account"
+  name "Grux AI"
+  desc "Local-first AI agent with one command panel, a local model and no account"
   homepage "https://gruxai.com/"
 
   livecheck do

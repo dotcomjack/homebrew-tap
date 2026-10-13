@@ -2,20 +2,15 @@
 
 Homebrew formulae and casks from [DotcomJack](https://dotcomjack.com).
 
-## grux
+## Grux AI
 
-The god agent for solopreneurs on Mac. Opens terminal sessions it can undo, runs
-agent swarms, builds iOS apps, handles your mail and your meetings.
+Local-first AI agent with one command panel, a local model and no account.
 
 ```sh
 brew install --cask dotcomjack/tap/grux
 ```
 
-Installs `Grux.app` and links its command line as `grux`, so the app and the CLI
-arrive together. Signed with a Developer ID, notarized and stapled. Apple silicon,
-macOS 14 or later.
-
-Source: https://github.com/dotcomjack/grux (MIT) | https://gruxai.com
+https://gruxai.com | Source: https://github.com/dotcomjack/grux (MIT)
 
 ## claude-session-tint
 
