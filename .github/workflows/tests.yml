@@ -25,14 +25,10 @@ jobs:
     timeout-minutes: 30
     strategy:
       matrix:
+        # macOS only: every formula and cask in this tap depends on macOS, so a Linux leg
+        # can only fail or test nothing.
         os: [ macos-15-intel, macos-26 ]
-        include:
-          - os: ubuntu-latest
-            container:
-              image: ghcr.io/homebrew/brew:main
-              options: --privileged
     runs-on: ${{ matrix.os }}
-    container: ${{ fromJSON(toJSON(matrix.container)) }} # zizmor: ignore[unpinned-images]
     permissions:
       actions: read
       checks: read
