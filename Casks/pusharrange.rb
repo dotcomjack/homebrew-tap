@@ -1,6 +1,6 @@
 cask "pusharrange" do
-  version "1.0.0"
-  sha256 "cd3a94f05e01f7b706f8a6dccf52706c5c0f391768f9f74d5915db73c864dff5"
+  version "1.1.0"
+  sha256 "de1518b7fdcba8342ff209948ddf9fae223a3d94a7f3e0ebaba437f8a97a1a22"
 
   url "https://dotcomjack.com/downloads/pusharrange/PushArrange-#{version}.dmg"
   name "PushArrange"
@@ -16,8 +16,7 @@ cask "pusharrange" do
     end
   end
 
-  # One arm64 slice, built for macOS 14 or later.
-  depends_on arch: :arm64
+  # Universal (arm64 and x86_64), built for macOS 14 or later.
   depends_on macos: :sonoma
 
   app "PushArrange.app"
