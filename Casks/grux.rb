@@ -1,9 +1,6 @@
 cask "grux" do
   version "3.2.0"
-  # PLACEHOLDER until the 3.2.0 ZIP is built: replace with the Grux-3.2.0-macOS-arm64.zip line of
-  # SHA256SUMS.txt from the staged release (docs/releasing-3.2.md step 3). Tap CI stays red until
-  # the GitHub release is public, because it fetches the URL below.
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "65120b698394bede640e55b36aed3fdf9af0503b445ae7b77cbe6c20780a09ef"
 
   url "https://github.com/dotcomjack/grux/releases/download/v#{version}/Grux-#{version}-macOS-arm64.zip"
   name "Grux AI"
