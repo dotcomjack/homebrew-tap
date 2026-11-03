@@ -1,6 +1,6 @@
 cask "pusharrange" do
-  version "1.1.2"
-  sha256 "c18501d121828b83e8aec29a2c08f8445dfd2c393c218b3c2fd6787ac2efc8e6"
+  version "1.2.1"
+  sha256 "aa981fc6e3d3d43fef241633818eedc6bc4f22c3eba6743632a8d59a70974987"
 
   url "https://dotcomjack.com/downloads/pusharrange/PushArrange-#{version}.dmg"
   name "PushArrange"
