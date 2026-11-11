@@ -2,7 +2,7 @@ class ClaudeSessionTint < Formula
   desc "Know which parallel Claude Code session is waiting on you"
   homepage "https://github.com/dotcomjack/claude-session-tint"
   url "https://github.com/dotcomjack/claude-session-tint/archive/refs/tags/v1.2.2.tar.gz"
-  sha256 "06906898c656c2b0c28856ec9830a293504f90ad3df48dceff6e0ff0eeb062d6"
+  sha256 "cac916144699d3263d9a0fc0a7a5c472f18eb55a7582989ab6922c0ebb2c74f7"
   license "MIT"
 
   depends_on "jq"
