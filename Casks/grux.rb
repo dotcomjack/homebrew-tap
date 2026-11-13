@@ -1,6 +1,6 @@
 cask "grux" do
-  version "3.3.0"
-  sha256 "46192a6089abbc92cce75306dd42c4b094229a7891dff98c927580c0dbe7ea1c"
+  version "3.3.1"
+  sha256 "fe553ce7adc565c17ff7c89a51730eebb39b36d0dcc31772d36f8932dec01ea3"
 
   url "https://github.com/dotcomjack/grux/releases/download/v#{version}/Grux-#{version}-macOS-arm64.zip"
   name "Grux AI"
